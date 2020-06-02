@@ -1,0 +1,121 @@
+.increment-wrap {
+    width: 100px;
+    position: relative;
+    margin-right:30px;   
+}
+.increment-wrap input {
+    width:100%;
+    text-align: center;
+    height: 35px;
+}
+.decrement {
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:#ddd;
+    border:none;
+    border-radius:3px;
+    color: #777;
+}
+.increment {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:#ddd;
+    border:none;
+    border-radius:3px;
+    color: #777;
+}
+.increment-buttons-outer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.check-wrap {
+    margin-left: 10px;
+}
+.check-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .cust-check-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 103px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .custom-req-buttons-outer {
+      display: flex;
+      width:100%;
+      margin-left: -10px;
+      margin-right: -10px;
+      
+  }
+  .custom-req-buttons-inner {
+      flex-basis: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      display: flex;
+      margin: 0 10px;
+  }
+  .cust-check-wrap span {
+      display: inline-block;
+      margin-top: 10px;
+  }
+
+  .check-wrap input:checked ~ .cust-check-wrap {
+    background-color: #000;
+  }
+  .check-wrap input:checked ~ .cust-check-wrap svg {
+    fill:#ffff;
+    stroke: #fff;
+  }
+  .check-wrap input:checked ~ .cust-check-wrap span {
+      color: #fff;
+  }
+  .check-outer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .check-outer li {
+    flex-basis: 25%;
+  }
+  .check-outer li input {
+      margin-right: 10px;
+  }
+  .special_requirement {
+      margin :25px 0;
+  }
+
+  .special_requirement h5{
+      margin-bottom: 20px;
+  }
+  .features-subhead {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.custom-req-buttons-outer {
+    display: flex;
+    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    flex-wrap: wrap;
+}

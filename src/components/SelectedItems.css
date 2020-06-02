@@ -1,0 +1,17 @@
+.photographer-description-outer {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+.delete {
+    border: none;
+    background: #f99d13;
+    color: #fff;
+    font-size: 13px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.floor-plan-save-btn:hover {
+    color: #fff;
+}

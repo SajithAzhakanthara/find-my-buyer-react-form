@@ -1,0 +1,83 @@
+
+.custom-tooltip-wrap {
+    position: relative;
+    cursor: pointer;
+}
+.custom-tooltip-wrap:hover .custom-tooltip-content {
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+.custom-tooltip-content {
+    position: absolute;
+    width: 200px;
+    background: #000;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 12px;
+    top: 0;
+    z-index: 10;
+    left: 18px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    pointer-events: none;
+}
+.custom-check-label {
+    display: inline-block;
+    margin: 0 5px;
+}
+.display-none {
+    display: none;
+}
+.form-group.postcode-outer i {
+    position: absolute;
+    right: 0;
+    background: #e50c81;
+    color: #fff;
+    top: 0;
+    height: 100%;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.form-group.postcode-outer span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.address1-outer,
+.address2-outer,
+#AddressLineThree,
+#town,
+#county,
+#country-outer {
+    pointer-events: none;
+}
+.all-address-textarea,
+.full-address-textarea {
+    height: 200px !important;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.all-address-textarea ul {
+    list-style: none;
+    padding: 0;
+}
+.all-address-textarea ul li {
+    cursor: pointer;
+}
+.full-address-textarea-ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.col-md-6.no-see {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
