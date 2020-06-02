@@ -60,6 +60,19 @@ function PropertyPhotograph(props){
          if( localStorage.getItem('photo-checked')){
           document.getElementById('need-photographer').checked = true;   
          }
+
+//popup script
+const trigger = document.querySelector('.photopopup-trigger');
+const popup = document.querySelector('.photograph-popup-outer');
+const close = document.querySelector('.popup-close');
+trigger.addEventListener('click',function(){
+    popup.classList.add('show')
+})
+close.addEventListener('click',function(){
+    popup.classList.remove('show')
+})
+
+
          
      })
      
@@ -196,7 +209,7 @@ function PropertyPhotograph(props){
                                         </div>
                                         <div className="photogallery-btn-outer">
                                        <h6>Sample photograph</h6>
-                                       <img src={sample}/>
+                                       <img src={sample} className="photopopup-trigger"/>
                                     </div>
                                     </div>                                    
                                     
@@ -252,6 +265,12 @@ function PropertyPhotograph(props){
                                     </div>
                                 </div>
                             </div>
+        </div>
+
+        <div className="photograph-popup-outer">
+            <div className="photo-popup">
+            <i className="fa fa-close popup-close" aria-hidden="true"></i>
+            </div>
         </div>
         </div>
     )
