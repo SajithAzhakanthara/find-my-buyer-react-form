@@ -78,7 +78,11 @@ function PropertyPhotograph(props){
 const trigger = document.querySelector('.photopopup-trigger');
 const popup = document.querySelector('.photograph-popup-outer');
 const close = document.querySelector('.popup-close');
+const clickSample = document.querySelector('.click-sample');
 trigger.addEventListener('click',function(){
+    popup.classList.add('show')
+})
+clickSample.addEventListener('click',function(){
     popup.classList.add('show')
 })
 close.addEventListener('click',function(){
@@ -223,6 +227,7 @@ close.addEventListener('click',function(){
                                         <div className="photogallery-btn-outer">
                                        <h6>Sample photograph</h6>
                                        <img src={sample} className="photopopup-trigger"/>
+                                       <h6 className="click-sample">Click to select samples</h6>
                                     </div>
                                     </div>                                    
                                     
