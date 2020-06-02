@@ -594,7 +594,8 @@ input#PortalUpload {
     display: flex;
 }
 .photo-popup {
-    width: 75%;
+    max-width: 700px;
+    /* height:70vh; */
     /* height: 70vh; */
     background-color: #fff;
     position: relative;
@@ -604,6 +605,9 @@ input#PortalUpload {
 }
 .click-sample {
     cursor: pointer;
+}
+.carousel.carousel-slider {
+    height: 100%;
 }
 .popup-close {
     position: absolute;
@@ -631,6 +635,7 @@ input#PortalUpload {
 }
 .pop-slider-wrap {
     padding: 20px;
+   
 }
 .carousel .control-dots {   
     display: none;
@@ -654,6 +659,10 @@ input#PortalUpload {
     }
     section.banner-outer img {       
         left: 15px;
+    }
+    .photo-popup {
+        max-width: 80%;
+        
     }
 }
 .payMent.payment-none {

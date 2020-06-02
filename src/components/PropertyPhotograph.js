@@ -227,7 +227,7 @@ close.addEventListener('click',function(){
                                         <div className="photogallery-btn-outer">
                                        <h6>Sample photograph</h6>
                                        <img src={sample} className="photopopup-trigger"/>
-                                       <h6 className="click-sample">Click to select samples</h6>
+                                       <h6 className="click-sample">Click to see samples</h6>
                                     </div>
                                     </div>                                    
                                     
