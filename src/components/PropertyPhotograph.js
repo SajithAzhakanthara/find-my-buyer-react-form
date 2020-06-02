@@ -2,11 +2,24 @@ import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import Dropzone from 'react-dropzone';
 import axios from 'axios';
-import sample from '../images/sampleimage1.jpg';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import sample from '../images/P1055525.jpg';
+import sample2 from '../images/P1055784.jpg';
+import sample3 from '../images/P1055785.jpg';
+import sample4 from '../images/P1055788.jpg';
+import sample5 from '../images/P1055789.jpg';
+import sample6 from '../images/P1055790.jpg';
+import sample7 from '../images/P1055791.jpg';
+import sample8 from '../images/P1055797.jpg';
+import sample9 from '../images/P1055798.jpg';
+import sample10 from '../images/P1055800.jpg';
 
 
 
 function PropertyPhotograph(props){
+
+    const sliderImage = [{"image":sample},{"image":sample2},{"image":sample3},{"image":sample4},{"image":sample5},{"image":sample6},{"image":sample7},{"image":sample8},{"image":sample9},{"image":sample10}]
     
     const[photoDetails, setPhotoDetails] = useState([]);
     const[loading,setLoading]= useState(false);
@@ -270,6 +283,19 @@ close.addEventListener('click',function(){
         <div className="photograph-popup-outer">
             <div className="photo-popup">
             <i className="fa fa-close popup-close" aria-hidden="true"></i>
+            <div className="pop-slider-wrap">
+            <Carousel>
+                {
+                    sliderImage.map(sliderImage=>{
+                        return(   
+                                <div className="pop-image">
+                                   <img src={sliderImage.image}/>
+                                </div>                           
+                        )
+                    })
+                }
+                 </Carousel>
+            </div>
             </div>
         </div>
         </div>

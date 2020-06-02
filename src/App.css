@@ -601,16 +601,30 @@ input#PortalUpload {
 }
 .popup-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    color: #000;  
-    cursor:pointer;    
+    top: 2px;
+    right: 5px;
+    color: #000;
+    cursor: pointer;
 }
 .photopopup-trigger {
     cursor: pointer;
 }
-
-
+.pop-image img {
+    width:100%;
+    
+}
+.pop-image {
+    width:100%;
+    height:100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pop-slider-wrap {
+    padding: 20px;
+}
 
 
 
