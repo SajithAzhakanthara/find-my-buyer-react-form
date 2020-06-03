@@ -119,11 +119,11 @@ function PropertyValuation(props) {
                     </div>
                </section> 
         <div className="upload-property-outer">
-            <h1>Property Valuation</h1>
+            <h1>ASKING PRICE</h1>
             <form>
                <div>
                    <p>
-                   In scotlant you must have a home to report to market your property, we cannot advertice your property without this.
+                   Please enter your asking price here, we recommend that you put a figure just below the home report value to generate interest.
                    </p>
                </div>
                <div className="row">
