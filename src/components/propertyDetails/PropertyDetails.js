@@ -391,13 +391,14 @@ if (!document.querySelector('#cust-select')){
           town:document.querySelector('#town').value,
           county:document.querySelector('#county').value,
           postCode:postcodeVal,
-          firstName:localStorage.getItem('first-name').value,
-          lastName:localStorage.getItem('last-name').value,
-          mobileNumber:localStorage.getItem('mobile-number').value,
-          email:localStorage.getItem('email').value,
+          firstName:localStorage.getItem('first-name'),
+          lastName:localStorage.getItem('last-name'),
+          mobileNumber:localStorage.getItem('mobile-number'),
+          email:localStorage.getItem('email'),
 
           
      }
+     //console.log("step-1" ,stepOnedetails);
      axios.post(stepurlpost,stepOnedetails)
      .then(res=>{
           localStorage.setItem('property-id',res.data.property_id)
@@ -423,6 +424,7 @@ if (!document.querySelector('#cust-select')){
 
 }
 console.log(localStorage.getItem('postCode').value)
+//console.log(stepOnedetails2);
 axios.post(stepurlpost,stepOnedetails2)
 .then(res=>{
      localStorage.setItem('property-id',res.data.property_id)
@@ -438,7 +440,7 @@ axios.post(stepurlpost,stepOnedetails2)
           }
           
          
-     console.log(localStorage.getItem('postCode'));
+   
      
 
      return(
