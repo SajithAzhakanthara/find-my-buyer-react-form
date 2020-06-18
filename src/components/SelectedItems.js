@@ -337,7 +337,7 @@ function SelectedItems(props){
                                 {/* <a href="http://developerhire.com/project/fmb/public/home" className="form-custom-btn floor-plan-save-btn" id="screen-five-btn">Save & continue</a> */}
                                 <div className="payMent payment-none">
                                 <StripeCheckout
-                                stripeKey = "pk_test_7DTjnUmnPx1E1futUCspzOZb00y7fjEZnZ"
+                                stripeKey = "pk_live_oQBPDXWS9mp95zu7cZ0Q74jp008UucB616"
                                 token={tockenHandler}
                                 billingAddress
                                 shippingAddress
