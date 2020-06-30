@@ -686,3 +686,12 @@ input#PortalUpload {
     display: flex;
     align-items: center;
 }
+.logo-in img {
+    max-width: 96px;
+    
+}
+.landlord-header {
+   
+   
+    align-items: center;
+}
