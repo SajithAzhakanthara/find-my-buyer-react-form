@@ -27,7 +27,7 @@ function PropertyValuation(props) {
 
    // ${localStorage.getItem('property_id')}
     useEffect(()=>{
-        axios.get(`https://findmybuyer.co.uk/api/property-step3/${localStorage.getItem('property-id')}`)
+        axios.get(`https://findmybuyer.co.uk/test/api/property-step3/${localStorage.getItem('property-id')}`)
 
         .then(res => {
             setPricePrefix(res.data)
@@ -90,7 +90,7 @@ function PropertyValuation(props) {
 
                 
             }
-            axios.post('https://findmybuyer.co.uk/api/property-form-step3',valueData)
+            axios.post('https://findmybuyer.co.uk/test/api/property-form-step3',valueData)
             props.history.push('./property-photo')
         }
 

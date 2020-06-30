@@ -27,12 +27,12 @@ function PropertyPhotograph(props){
     const[upImages,setUpImages]=useState([])
     const maxSize = 100000000
     const prop_id = localStorage.getItem('property-id')   
-    const allImgURL = "https://findmybuyer.co.uk/api/property-step4-allPhotos/";
-    const imgURL = 'https://findmybuyer.co.uk/storage/app/public/propertyImages/thumb/';
-    const deleteImgURL = 'https://findmybuyer.co.uk/api/property-step4-deletePhotos';
-    const baseURL = "https://findmybuyer.co.uk/api/property-form-step4";
-    const photograbperURL = 'https://findmybuyer.co.uk/api/property-form-step4-photographer-select';
-    const photoDetailsURL = 'https://findmybuyer.co.uk/api/property-step4-photographer';
+    const allImgURL = "https://findmybuyer.co.uk/test/api/property-step4-allPhotos/";
+    const imgURL = 'https://findmybuyer.co.uk/test/storage/app/public/propertyImages/thumb/';
+    const deleteImgURL = 'https://findmybuyer.co.uk/test/api/property-step4-deletePhotos';
+    const baseURL = "https://findmybuyer.co.uk/test/api/property-form-step4";
+    const photograbperURL = 'https://findmybuyer.co.uk/test/api/property-form-step4-photographer-select';
+    const photoDetailsURL = 'https://findmybuyer.co.uk/test/api/property-step4-photographer';
 
 
 

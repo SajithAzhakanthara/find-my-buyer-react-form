@@ -32,8 +32,8 @@ function SelectedItems(props){
     
 
      const propId = localStorage.getItem('property-id');
-     const allDetailURL = 'https://findmybuyer.co.uk/api/property-featured-list/'
-     const deleteURL = 'https://findmybuyer.co.uk/api/property-featured-delete'
+     const allDetailURL = 'https://findmybuyer.co.uk/test/api/property-featured-list/'
+     const deleteURL = 'https://findmybuyer.co.uk/test/api/property-featured-delete'
 
     useEffect(()=> {
       axios.get(allDetailURL+propId)
@@ -166,12 +166,12 @@ function SelectedItems(props){
        }
 
        
-        axios.post('https://findmybuyer.co.uk/api/stripePost',stripeDetails)
+        axios.post('https://findmybuyer.co.uk/test/api/stripePost',stripeDetails)
         .then(res=>{
             console.log(res.data.status)
             if(res.data.status ==='success'){
                 //props.history.push('')
-                window.location.replace('https://findmybuyer.co.uk/api/property-payment-success')
+                window.location.replace('https://findmybuyer.co.uk/test/api/property-payment-success')
                 localStorage.clear();
                
             }else{

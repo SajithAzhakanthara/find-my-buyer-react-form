@@ -13,7 +13,7 @@ const[countryData,setCountryData]=useState([])
 const [newAddress,setnewAddress]= useState('')
 const [postcodeVal,setPostcodeVal]= useState('')
 //const [checkValue,setCheckValue]=useState(false)  
-const constURL = 'https://findmybuyer.co.uk/'
+const constURL = 'https://findmybuyer.co.uk/test/test/'
 const stepurlpost = `${constURL}/api/property-form-step1`    
 const stepurlget = `${constURL}/api/property-form/test`    
 
@@ -114,7 +114,7 @@ console.log(userData)
      }
      const onAddressChangeHandler = () => {
           const addressvalue = document.getElementById('address-select').value
-          axios.get(`https://findmybuyer.co.uk/api/property-form-getAddress/${addressvalue}`)
+          axios.get(`https://findmybuyer.co.uk/test/api/property-form-getAddress/${addressvalue}`)
           .then(res=>{
                console.log(res.data)
                // document.getElementById('AddressLineOne').value = res.data.line1;
@@ -156,7 +156,7 @@ console.log(userData)
           if(document.getElementById('postcode').value.length>=6){
 
                const postCodeValue = document.getElementById('postcode').value;
-               axios.get(`https://findmybuyer.co.uk/api/property-form-postcode/${postCodeValue.replace(/\s/g,'')}`)                             
+               axios.get(`https://findmybuyer.co.uk/test/api/property-form-postcode/${postCodeValue.replace(/\s/g,'')}`)                             
                .then(res => {
                 console.log(res.data)
                 setnewAddress(res.data.records);
@@ -188,7 +188,7 @@ console.log(userData)
                          for (var i = 0; i < selectedLi.length; ++i) {
                           selectedLi[i].addEventListener('click',function(){
                               
-                               axios.get(`https://findmybuyer.co.uk/api/property-form-getAddress/${this.id}`)
+                               axios.get(`https://findmybuyer.co.uk/test/api/property-form-getAddress/${this.id}`)
                                .then(res=>{                         
                                    
                                     document.getElementById('fullAddressOne').innerHTML = res.data.line1;

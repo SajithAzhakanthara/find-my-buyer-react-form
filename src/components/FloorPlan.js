@@ -14,12 +14,12 @@ function FloorPlan (props){
     const maxSize = 100000000
      const prop_id = localStorage.getItem('property-id')
     //const prop_id = 22
-    const allfloorURL = "https://findmybuyer.co.uk/api/property-step6-floorPlan/";
-    const imgURL = 'https://findmybuyer.co.uk/storage/app/properties/floorplan/';
-    const deleteImgURL = 'https://findmybuyer.co.uk/api/property-step6-floorPlan-delete';
-    const baseURL = "https://findmybuyer.co.uk/api/property-form-step6-floorplan-upload"
-    const floorURL = 'https://findmybuyer.co.uk/api/property-form-step6-floorplan-select';
-    const floorplanDetailsURL = 'https://findmybuyer.co.uk/api/property-step6-floorplan';
+    const allfloorURL = "https://findmybuyer.co.uk/test/api/property-step6-floorPlan/";
+    const imgURL = 'https://findmybuyer.co.uk/test/storage/app/properties/floorplan/';
+    const deleteImgURL = 'https://findmybuyer.co.uk/test/api/property-step6-floorPlan-delete';
+    const baseURL = "https://findmybuyer.co.uk/test/api/property-form-step6-floorplan-upload"
+    const floorURL = 'https://findmybuyer.co.uk/test/api/property-form-step6-floorplan-select';
+    const floorplanDetailsURL = 'https://findmybuyer.co.uk/test/api/property-step6-floorplan';
 
   
 
