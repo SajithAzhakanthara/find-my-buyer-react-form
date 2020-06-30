@@ -687,7 +687,7 @@ input#PortalUpload {
     align-items: center;
 }
 .logo-in img {
-    max-width: 96px;
+    max-width: 96px !important;
     
 }
 .landlord-header {
