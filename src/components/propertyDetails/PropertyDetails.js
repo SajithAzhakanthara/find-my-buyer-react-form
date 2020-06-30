@@ -13,7 +13,7 @@ const[countryData,setCountryData]=useState([])
 const [newAddress,setnewAddress]= useState('')
 const [postcodeVal,setPostcodeVal]= useState('')
 //const [checkValue,setCheckValue]=useState(false)  
-const constURL = 'https://findmybuyer.co.uk/test/test/'
+const constURL = 'https://findmybuyer.co.uk/test/'
 const stepurlpost = `${constURL}/api/property-form-step1`    
 const stepurlget = `${constURL}/api/property-form/test`    
 
