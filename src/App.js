@@ -24,16 +24,16 @@ function App() {
    useEffect(()=>{
    // !localStorage.getItem('userids')?
      if(!localStorage.getItem('userids')){
-      window.location.replace('https://findmybuyer.co.uk/test/home')
+      window.location.replace('https://findmybuyer.co.uk/home')
      }
    },[])
   useEffect(()=>{
-    axios.get('https://findmybuyer.co.uk/test/api/header-design')
+    axios.get('https://findmybuyer.co.uk/api/header-design')
     .then(res=>{
       setHeader(res.data);
       document.querySelector('.header-wrap').innerHTML= res.data;
     })  
-axios.get('https://findmybuyer.co.uk/test/api/footer-design')
+axios.get('https://findmybuyer.co.uk/api/footer-design')
 .then(res=>{
   document.querySelector('.footer-wrap').innerHTML= res.data;
 })
