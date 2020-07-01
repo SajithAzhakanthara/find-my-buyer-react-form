@@ -41,9 +41,9 @@ const onTabchangeTwo = () => {
 
 function Headlines(props){
 
-     const contentDetailsURL = 'https://findmybuyer.co.uk/test/api/property-step8-contentwriter'
-     const postContentURL = 'https://findmybuyer.co.uk/test/api/property-step8-contentwriter-select'
-     const descURL = 'https://findmybuyer.co.uk/test/api/property-step8-contentwriter-content'
+     const contentDetailsURL = 'https://findmybuyer.co.uk/api/property-step8-contentwriter'
+     const postContentURL = 'https://findmybuyer.co.uk/api/property-step8-contentwriter-select'
+     const descURL = 'https://findmybuyer.co.uk/api/property-step8-contentwriter-content'
      const propId = localStorage.getItem('property-id');
      const[contentDetails,setContentDetails] = useState('')
      const [content,setContent] = useState('')

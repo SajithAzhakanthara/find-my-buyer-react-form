@@ -27,7 +27,7 @@ function PropertyType(props) {
 
 
    const [propertyTypeDetails, setPropertyTypeDetails] = useContext(PropertyContext);
-   const postURL = 'https://findmybuyer.co.uk/test/api/property-form-step2-headlines';
+   const postURL = 'https://findmybuyer.co.uk/api/property-form-step2-headlines';
 
 
 
@@ -43,7 +43,7 @@ function PropertyType(props) {
 
             useEffect( () => {
               
-                axios.get("https://findmybuyer.co.uk/test/api/property-form-step2")
+                axios.get("https://findmybuyer.co.uk/api/property-form-step2")
                 .then(res=>{
                     setPropertyTypeDetails(res.data);
                     //console.log(res.data)
@@ -173,7 +173,7 @@ useEffect(()=>{
     const propId = document.querySelector('#prop-type').value;
      //console.log(value)
     if(document.querySelector('#prop-type').value!=0){
-        axios.get(`https://findmybuyer.co.uk/test/api/get-sub-property/${propId}`)
+        axios.get(`https://findmybuyer.co.uk/api/get-sub-property/${propId}`)
     .then(res=>{        
        
         
@@ -192,7 +192,7 @@ useEffect(()=>{
            //setSelectValue(document.querySelector('#instruction-type').value)
     const propId = document.querySelector('#prop-type').value;
     //console.log(value)
-   axios.get(`https://findmybuyer.co.uk/test/api/get-sub-property/${propId}`)
+   axios.get(`https://findmybuyer.co.uk/api/get-sub-property/${propId}`)
    .then(res=>{        
       
        

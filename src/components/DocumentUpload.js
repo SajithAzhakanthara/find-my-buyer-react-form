@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 
 function DocumentUpload(props){
 
-    const epcURL = 'https://findmybuyer.co.uk/test/api/property-form-step7-epc-document-upload';
-    const propScheduleURL = 'https://findmybuyer.co.uk/test/api/property-form-step7-ps-document-upload';
-    const homeReportURL = 'https://findmybuyer.co.uk/test/api/property-form-step7-hr-document-upload';
+    const epcURL = 'https://findmybuyer.co.uk/api/property-form-step7-epc-document-upload';
+    const propScheduleURL = 'https://findmybuyer.co.uk/api/property-form-step7-ps-document-upload';
+    const homeReportURL = 'https://findmybuyer.co.uk/api/property-form-step7-hr-document-upload';
     const prop_id = localStorage.getItem('property-id')
     
 

@@ -12,12 +12,12 @@ function Video (props){
     const[upVideo,setUpVideo]=useState([])
     const maxSize = 100000000
     const prop_id = localStorage.getItem('property-id')
-    const allImgURL = "https://findmybuyer.co.uk/test/api/property-step5-uploaded-video/";
-    const imgURL = 'https://findmybuyer.co.uk/test/storage/app/properties/propertyVideos/';
-    const deleteImgURL = 'https://findmybuyer.co.uk/test/api/property-step5-video-delete';
-    const baseURL = "https://findmybuyer.co.uk/test/api/property-step5-video-upload";
-    const videograbperURL = 'https://findmybuyer.co.uk/test/api/property-form-step5-videographer-select';
-    const vedioDetailsURL = 'https://findmybuyer.co.uk/test/api/property-step5-videographer';
+    const allImgURL = "https://findmybuyer.co.uk/api/property-step5-uploaded-video/";
+    const imgURL = 'https://findmybuyer.co.uk/storage/app/properties/propertyVideos/';
+    const deleteImgURL = 'https://findmybuyer.co.uk/api/property-step5-video-delete';
+    const baseURL = "https://findmybuyer.co.uk/api/property-step5-video-upload";
+    const videograbperURL = 'https://findmybuyer.co.uk/api/property-form-step5-videographer-select';
+    const vedioDetailsURL = 'https://findmybuyer.co.uk/api/property-step5-videographer';
 
 
 
