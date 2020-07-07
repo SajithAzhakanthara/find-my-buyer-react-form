@@ -94,9 +94,12 @@ console.log(userData)
           if(document.getElementById('custom-checkbox').checked){
              document.querySelector('.second-owner').classList.remove('display-none')
                       
-          }else {
-               document.querySelector('.second-owner').classList.add('display-none') 
           }
+          if(document.getElementById('custom-checkbox-no').checked){
+               document.querySelector('.second-owner').classList.add('display-none')
+                        
+            }
+          
           
           localStorage.setItem('first-name',document.querySelector('#firstName').value);
           localStorage.setItem('last-name',document.querySelector('#lastName').value);
@@ -356,6 +359,13 @@ console.log(userData)
                }
           } 
 
+          if (!document.querySelector("#custom-checkbox").checked && !document.querySelector("#custom-checkbox-no").checked){
+               document.querySelector("#custom-checkbox").classList.add('check-red');
+               document.querySelector("#custom-checkbox-no").classList.add('check-red');
+               
+               err=1;
+          }
+
           if(document.getElementById('postcode').classList.contains('border-red')){
                err=1
           }
@@ -583,8 +593,10 @@ axios.post(stepurlpost,stepOnedetails2)
                    <div className="row">
                         <div className="col-md-12">
                              <div className="form-group">
-                                  <input type="checkbox" className="custom-checkbox" id="custom-checkbox" onClick={onChangeHandler}/>
+                                  <input type="radio" name="so" className="custom-checkbox" id="custom-checkbox" onClick={onChangeHandler}/>
                                   <label className="custom-check-label">This property has second owner</label>
+                                  <input type="radio" name="so" className="custom-checkbox"  id="custom-checkbox-no" onClick={onChangeHandler}/>
+                                  <label className="custom-check-label">No second owner</label>
                                   <span className="custom-tooltip-wrap">
                                        <i className="fa fa-question-circle" aria-hidden="true"></i>
                                        <span className="custom-tooltip-content">

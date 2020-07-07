@@ -695,3 +695,6 @@ input#PortalUpload {
    
     align-items: center;
 }
+.check-red {
+    outline:2px solid #f00;
+}
