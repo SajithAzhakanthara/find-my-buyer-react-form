@@ -326,6 +326,7 @@ console.log(userData)
           // }else{
           //      document.getElementById('country').classList.remove('border-red');
           // }
+          
          
           if(document.getElementById('custom-checkbox').checked){
                if(document.getElementById('firstName').value.length == 0 || document.getElementById('firstName').value.length >= 7 ){
@@ -359,12 +360,7 @@ console.log(userData)
                }
           } 
 
-          if (!document.querySelector("#custom-checkbox").checked && !document.querySelector("#custom-checkbox-no").checked){
-               document.querySelector("#custom-checkbox").classList.add('check-red');
-               document.querySelector("#custom-checkbox-no").classList.add('check-red');
-               
-               err=1;
-          }
+          
 
           if(document.getElementById('postcode').classList.contains('border-red')){
                err=1
@@ -375,6 +371,12 @@ console.log(userData)
           }else{
                err=0
                document.querySelector('#full-address-textarea').classList.remove('border-red')
+          }
+          if (!document.querySelector("#custom-checkbox").checked && !document.querySelector("#custom-checkbox-no").checked){
+               document.querySelector("#custom-checkbox").classList.add('check-red');
+               document.querySelector("#custom-checkbox-no").classList.add('check-red');
+               
+               err=1;
           }
           if(err==0){
                //alert('submited')
