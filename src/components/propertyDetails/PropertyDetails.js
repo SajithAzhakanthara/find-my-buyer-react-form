@@ -45,7 +45,7 @@ const stepurlget = `${constURL}/api/property-form/test`
      //document.querySelector('#AddressLineFour').value = localStorage.getItem('address4-value')
      document.querySelector('#town').value = localStorage.getItem('town')
      document.querySelector('#county').value = localStorage.getItem('county')
-     document.querySelector('#postcode').value = localStorage.getItem('postcode') 
+     // document.querySelector('#postcode').value = localStorage.getItem('postcode') 
           
      document.querySelector('#firstName').value = localStorage.getItem('first-name')
      document.querySelector('#lastName').value = localStorage.getItem('last-name')
@@ -143,15 +143,19 @@ console.log(userData)
      
      }
 
-     
+     const onClickHandler = () => {
+          
+     }
 
      const onPostcodeChangeHandler = () =>{
 
          
-          setTimeout(()=>{
-               localStorage.setItem('postCode',document.querySelector('#postcode').value)
+          // setTimeout(()=>{
+          //      localStorage.setItem('postCode',document.querySelector('#postcode').value)
+          //      setPostcodeVal(document.querySelector('#postcode').value)
+          // },2000)
+          localStorage.setItem('postCode',document.querySelector('#postcode').value)
                setPostcodeVal(document.querySelector('#postcode').value)
-          },2000)
          
           var config = {
                headers: {'Access-Control-Allow-Origin': '*'}
@@ -503,7 +507,7 @@ axios.post(stepurlpost,stepOnedetails2)
                              <div className="form-group postcode-outer">
                                   <label>Postcode(if applicable)</label>
                                   <span>
-                                    <input type="text" id="postcode" className="form-control" onChange={onChangeHandler}/>
+                                    <input type="text" id="postcode" className="form-control" onClick={onChangeHandler}/>
                                     <i class="fa fa-search" aria-hidden="true" onClick={onPostcodeChangeHandler}></i>
                                   </span>
                                   <p class="error"></p>
